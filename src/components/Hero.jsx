@@ -52,7 +52,7 @@ export const Hero = () => {
             </h1>
 
             {/* Sub-text */}
-            <p style={{ fontSize: "1.05rem", color: "#4B5563", lineHeight: 1.75, marginBottom: "1.5rem", maxWidth: 480 }}>
+            <p style={{ fontSize: "1.05rem", color: "#E5E7EB", lineHeight: 1.75, marginBottom: "1.5rem", maxWidth: 480 }}>
               Stress-free relocation for homes, offices &amp; vehicles. Trusted by
               thousands of families across Tamil Nadu with 15+ years of excellence.
             </p>
@@ -60,7 +60,7 @@ export const Hero = () => {
             {/* Check list */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "0.65rem", marginBottom: "1.75rem" }}>
               {checks.map((c) => (
-                <span key={c} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: "0.875rem", color: "#374151", fontWeight: 500 }}>
+                <span key={c} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: "0.875rem", color: "#FFFFFF", fontWeight: 500 }}>
                   <CheckCircle size={18} weight="fill" style={{ color: "#16a34a" }} />
                   {c}
                 </span>
@@ -73,15 +73,15 @@ export const Hero = () => {
                 onClick={() => router.push("/get-quote")}
                 className="btn-primary"
                 data-testid="hero-get-quote-btn"
-                style={{ display: "inline-flex", alignItems: "center", gap: 7 }}
+                style={{ display: "inline-flex", alignItems: "center", gap: 7, background: "#000814", borderColor: "#000814" }}
               >
                 Get Free Quote <ArrowRight size={17} weight="bold" />
               </button>
               <a
-                href="tel:+919876543210"
-                className="btn-secondary"
+                href="tel:+918199002004"
+                className="btn-outline"
                 data-testid="hero-call-btn"
-                style={{ display: "inline-flex", alignItems: "center", gap: 7 }}
+                style={{ display: "inline-flex", alignItems: "center", gap: 7, color: "#fff", borderColor: "rgba(255,255,255,0.4)" }}
               >
                 <Phone size={17} weight="fill" />
                 Call Now
@@ -98,10 +98,10 @@ export const Hero = () => {
               ].map(({ value, label }) => (
                 <div key={label} className="hero-stat-pill">
                   <div>
-                    <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "1.25rem", color: "#1D4ED8", lineHeight: 1 }}>
+                    <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "1.25rem", color: "#FF5A00", lineHeight: 1 }}>
                       {value}
                     </div>
-                    <div style={{ fontSize: "0.72rem", color: "#6b7280", marginTop: 2 }}>{label}</div>
+                    <div style={{ fontSize: "0.72rem", color: "#D1D5DB", marginTop: 2 }}>{label}</div>
                   </div>
                 </div>
               ))}
@@ -128,7 +128,7 @@ export const Hero = () => {
                 height: "90%",
                 top: "5%",
                 borderRadius: "50%",
-                background: "radial-gradient(circle, rgba(29,78,216,0.08) 0%, transparent 70%)",
+                background: "radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%)",
               }}
             />
 
@@ -138,10 +138,11 @@ export const Hero = () => {
                 position: "relative",
                 borderRadius: 24,
                 overflow: "hidden",
-                boxShadow: "0 20px 60px rgba(29,78,216,0.18)",
-                background: "#fff",
+                boxShadow: "0 20px 60px rgba(0,0,0,0.8)",
+                background: "var(--navy-mid)",
                 width: "100%",
                 animation: "float 5s ease-in-out infinite",
+                border: "1px solid rgba(255,255,255,0.05)",
               }}
             >
               <img
@@ -157,19 +158,20 @@ export const Hero = () => {
                   position: "absolute",
                   top: 16,
                   right: 16,
-                  background: "#fff",
+                  background: "var(--navy-mid)",
                   borderRadius: 12,
                   padding: "8px 14px",
-                  boxShadow: "0 4px 16px rgba(0,0,0,0.12)",
+                  boxShadow: "0 4px 16px rgba(0,0,0,0.4)",
                   display: "flex",
                   alignItems: "center",
                   gap: 8,
                   animation: "float 3.5s ease-in-out infinite 0.5s",
+                  border: "1px solid rgba(255,255,255,0.1)",
                 }}
               >
                 <span style={{ fontSize: "1.2rem" }}>✅</span>
                 <div>
-                  <div style={{ fontSize: "0.65rem", color: "#6b7280" }}>Delivery</div>
+                  <div style={{ fontSize: "0.65rem", color: "var(--text-muted)" }}>Delivery</div>
                   <div style={{ fontWeight: 700, color: "#16a34a", fontSize: "0.82rem", fontFamily: "Poppins" }}>On Time</div>
                 </div>
               </div>
@@ -180,10 +182,13 @@ export const Hero = () => {
                   position: "absolute",
                   bottom: 16,
                   left: 16,
-                  background: "#1D4ED8",
+                  background: "var(--primary)",
                   borderRadius: 12,
                   padding: "8px 14px",
-                  boxShadow: "0 4px 16px rgba(29,78,216,0.3)",
+                  background: "#ff5a00",
+                  borderRadius: 12,
+                  padding: "8px 14px",
+                  boxShadow: "0 4px 16px rgba(255, 90, 0, 0.3)",
                   animation: "float 4s ease-in-out infinite 1s",
                 }}
               >
@@ -199,23 +204,23 @@ export const Hero = () => {
                 display: "flex",
                 alignItems: "center",
                 gap: "1rem",
-                background: "#fff",
+                background: "#111",
                 borderRadius: 14,
                 padding: "12px 20px",
-                boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                border: "1px solid #E5E7EB",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.3)",
+                border: "1px solid #222",
                 width: "100%",
                 justifyContent: "center",
               }}
             >
               <div style={{ display: "flex", gap: 2 }}>
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} weight="fill" style={{ color: "#F59E0B" }} />
+                  <Star key={i} size={16} weight="fill" style={{ color: "#ff5a00" }} />
                 ))}
               </div>
-              <div style={{ fontSize: "0.9rem", fontWeight: 600, color: "#0F172A" }}>4.9/5</div>
-              <div style={{ width: 1, height: 20, background: "#E5E7EB" }} />
-              <div style={{ fontSize: "0.82rem", color: "#6b7280" }}>2,400+ Reviews on Google</div>
+              <div style={{ fontSize: "0.9rem", fontWeight: 600, color: "#fff" }}>4.9/5</div>
+              <div style={{ width: 1, height: 20, background: "#222" }} />
+              <div style={{ fontSize: "0.82rem", color: "#D1D5DB" }}>2,400+ Reviews on Google</div>
             </div>
           </div>
         </div>

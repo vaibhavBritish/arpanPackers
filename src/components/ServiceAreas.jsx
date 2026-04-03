@@ -22,20 +22,20 @@ export const ServiceAreas = () => {
     <section
       id="service-areas"
       ref={sectionRef}
-      className="bg-white py-10 md:py-16 px-4"
+      className="bg-black py-10 md:py-16 px-4 border-t border-zinc-900"
     >
       <div className="max-w-7xl mx-auto">
         
         {/* Header */}
         <div className="text-center mb-10 md:mb-14">
-          <div className="flex items-center justify-center gap-2 text-sm text-blue-600 mb-2">
+          <div className="flex items-center justify-center gap-2 text-sm text-primary mb-2 font-semibold">
             <MapPin size={14} weight="fill" />
             Coverage
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold text-slate-900">
+          <h2 className="text-2xl md:text-4xl font-bold text-white">
             Areas We Serve
           </h2>
-          <p className="text-gray-600 mt-3 max-w-xl mx-auto text-sm md:text-base">
+          <p className="text-zinc-400 mt-3 max-w-xl mx-auto text-sm md:text-base">
             We provide door-to-door moving services across Chennai and intercity across India.
           </p>
         </div>
@@ -44,57 +44,63 @@ export const ServiceAreas = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           
           {/* Local Areas */}
-          <div className="bg-gray-50 rounded-2xl p-5 md:p-8 border">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="bg-blue-100 text-blue-600 p-2 rounded-lg">
-                <MapPin size={20} weight="fill" />
+          <div className="bg-zinc-900/50 rounded-2xl p-6 md:p-8 border border-zinc-800/50 backdrop-blur-sm shadow-xl">
+            <div className="flex items-center gap-4 mb-7">
+              <div className="bg-primary/10 text-primary p-3 rounded-xl border border-primary/20 shadow-[0_0_20px_rgba(255,90,0,0.1)]">
+                <MapPin size={22} weight="fill" />
               </div>
               <div>
-                <div className="font-semibold text-slate-900">Within Chennai</div>
-                <div className="text-xs text-gray-500">All major localities</div>
+                <div className="text-lg font-bold text-white tracking-tight">Within Chennai</div>
+                <div className="text-xs text-zinc-500 font-medium">All major localities covered</div>
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-center md:text-left">
               {areas.map((a) => (
-                <span
+                <div
                   key={a}
-                  className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs border hover:bg-blue-600 hover:text-white transition"
+                  className="bg-black/40 text-zinc-400 px-3 py-2 rounded-xl text-[11px] font-medium border border-zinc-800/50 hover:border-primary/40 hover:text-white hover:bg-black/60 transition-all duration-300 flex items-center gap-2 group"
                 >
-                  {a}
-                </span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-700 group-hover:bg-primary transition-colors flex-shrink-0" />
+                  <span className="truncate">{a}</span>
+                </div>
               ))}
             </div>
           </div>
 
           {/* Intercity */}
-          <div className="bg-gray-50 rounded-2xl p-5 md:p-8 border">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="bg-orange-100 text-orange-600 p-2 rounded-lg">
-                <Phone size={20} weight="fill" />
+          <div className="bg-zinc-900/50 rounded-2xl p-6 md:p-8 border border-zinc-800/50 backdrop-blur-sm shadow-xl">
+            <div className="flex items-center gap-4 mb-7">
+              <div className="bg-primary/10 text-primary p-3 rounded-xl border border-primary/20 shadow-[0_0_20px_rgba(255,90,0,0.1)]">
+                <Phone size={22} weight="fill" />
               </div>
               <div>
-                <div className="font-semibold text-slate-900">Intercity Moves</div>
-                <div className="text-xs text-gray-500">Pan India coverage</div>
+                <div className="text-lg font-bold text-white tracking-tight">Intercity Moves</div>
+                <div className="text-xs text-zinc-500 font-medium">Pan India coverage & support</div>
               </div>
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {intercity.map((r) => (
                 <div
                   key={r}
-                  className="flex items-center gap-3 p-3 bg-white rounded-lg border text-sm font-medium text-gray-700 hover:bg-blue-50 hover:border-blue-500 transition"
+                  className="group flex items-center gap-3 p-3 bg-black/40 rounded-xl border border-zinc-800/50 text-[13px] font-medium text-zinc-300 hover:border-primary/40 hover:bg-black/60 transition-all duration-300"
                 >
-                  🚚 {r}
+                  <div className="text-primary opacity-70 group-hover:opacity-100 transition-opacity">
+                    🚚
+                  </div>
+                  <span className="truncate">{r}</span>
                 </div>
               ))}
             </div>
-
+            
             {/* Working Hours */}
-            <div className="mt-5 bg-blue-600 text-white p-4 rounded-lg flex items-center gap-3">
-              <Clock size={18} weight="fill" className="text-blue-200" />
-              <div className="text-sm">
-                <strong>Available 24/7</strong> · Mon – Sun
+            <div className="mt-6 p-[2px] rounded-xl bg-gradient-to-r from-primary to-orange-400">
+              <div className="bg-[#0f1115] rounded-[10px] p-4 flex items-center justify-center gap-3">
+                <Clock size={18} weight="fill" className="text-primary" />
+                <div className="text-xs font-bold text-white uppercase tracking-wider">
+                  Available 24/7 · Mon – Sun
+                </div>
               </div>
             </div>
           </div>

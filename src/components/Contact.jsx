@@ -11,8 +11,7 @@ export const Contact = () => {
       icon: Phone,
       label: "Call Us",
       value: "+91 81990 02004",
-      sub: "+91 44 2345 6789",
-      href: "tel:+919876543210",
+      href: "tel:+918199002004",
       color: "icon-blue",
     },
     {
@@ -20,7 +19,7 @@ export const Contact = () => {
       label: "WhatsApp",
       value: "+91 81990 02004",
       sub: "Quick response",
-      href: "https://wa.me/919876543210",
+      href: "https://wa.me/918199002004",
       color: "icon-green",
     },
     {

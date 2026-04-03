@@ -7,10 +7,10 @@ export const WhyChooseUs = () => {
   const sectionRef = useScrollReveal();
 
   const stats = [
-    { value: "15+",    label: "Years Experience",    suffix: "" },
-    { value: "10,000", label: "Happy Customers",     suffix: "+" },
-    { value: "98",     label: "Satisfaction Rate",   suffix: "%" },
-    { value: "24/7",   label: "Customer Support",    suffix: "" },
+    { value: "15+", label: "Years Experience", suffix: "" },
+    { value: "10,000", label: "Happy Customers", suffix: "+" },
+    { value: "98", label: "Satisfaction Rate", suffix: "%" },
+    { value: "24/7", label: "Customer Support", suffix: "" },
   ];
 
   const features = [
@@ -63,7 +63,7 @@ export const WhyChooseUs = () => {
       id="about"
       ref={sectionRef}
       data-testid="why-choose-us-section"
-      style={{ background: "#F8FAFC", padding: 0 }}
+      style={{ background: "var(--navy)", padding: 0 }}
     >
       {/* Stats banner */}
       <div className="stats-banner">
@@ -104,11 +104,11 @@ export const WhyChooseUs = () => {
               <Medal size={14} weight="fill" />
               Why Choose Us
             </div>
-            <h2 className="section-title">
+            <h2 className="section-title" style={{ color: "#FFFFFF" }}>
               Chennai's Most Trusted Movers
             </h2>
             <div className="divider" style={{ margin: "0.75rem auto 1rem" }} />
-            <p className="section-subtitle" style={{ margin: "0 auto" }}>
+            <p className="section-subtitle" style={{ margin: "0 auto", color: "#D1D5DB" }}>
               We're committed to making your relocation stress-free, seamless,
               and memorable for all the right reasons.
             </p>
@@ -126,6 +126,7 @@ export const WhyChooseUs = () => {
                 key={f.title}
                 className={`feature-card reveal ${f.delay}`}
                 data-testid={`feature-card-${f.title.toLowerCase().replace(" ", "-")}`}
+                style={{ background: "var(--navy-mid)", border: "1px solid rgba(255,255,255,0.05)" }}
               >
                 <div className={`icon-box ${f.color}`}>
                   <f.icon size={26} weight="duotone" />
@@ -135,13 +136,13 @@ export const WhyChooseUs = () => {
                     fontFamily: "Poppins, sans-serif",
                     fontWeight: 600,
                     fontSize: "1.05rem",
-                    color: "#0F172A",
+                    color: "#FFFFFF",
                     margin: "0 0 0.5rem",
                   }}
                 >
                   {f.title}
                 </h3>
-                <p style={{ color: "#6b7280", fontSize: "0.88rem", lineHeight: 1.65, margin: 0 }}>
+                <p style={{ color: "#D1D5DB", fontSize: "0.88rem", lineHeight: 1.65, margin: 0 }}>
                   {f.desc}
                 </p>
               </div>

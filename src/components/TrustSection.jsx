@@ -33,7 +33,7 @@ export const TrustSection = () => {
     <section
       ref={sectionRef}
       id="process"
-      style={{ background: "#F8FAFC", padding: "5rem 0" }}
+      style={{ background: "#FFFFFF", padding: "5rem 0" }}
       data-testid="trust-section"
     >
       <div className="container-custom">
@@ -41,7 +41,7 @@ export const TrustSection = () => {
         <div
           className="reveal"
           style={{
-            background: "linear-gradient(135deg, #1D4ED8 0%, #1e40af 100%)",
+            background: "linear-gradient(135deg, #FF5A00 0%, #CC4800 100%)",
             borderRadius: "20px",
             padding: "3rem 2.5rem",
             display: "flex",
@@ -50,10 +50,11 @@ export const TrustSection = () => {
             alignItems: "center",
             justifyContent: "space-between",
             marginBottom: "4rem",
+            boxShadow: "0 20px 40px rgba(255, 90, 0, 0.2)",
           }}
         >
           <div>
-            <div style={{ color: "#bfdbfe", fontSize: "0.85rem", fontWeight: 600, marginBottom: "0.5rem" }}>
+            <div style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.85rem", fontWeight: 600, marginBottom: "0.5rem" }}>
               ⚡ Fast Response · No Hidden Charges
             </div>
             <h2
@@ -75,11 +76,11 @@ export const TrustSection = () => {
                     display: "flex",
                     alignItems: "center",
                     gap: 6,
-                    color: "#bfdbfe",
+                    color: "rgba(255,255,255,0.9)",
                     fontSize: "0.85rem",
                   }}
                 >
-                  <CheckCircle size={16} weight="fill" style={{ color: "#4ade80" }} />
+                  <CheckCircle size={16} weight="fill" style={{ color: "#FFFFFF" }} />
                   {t}
                 </span>
               ))}
@@ -87,23 +88,24 @@ export const TrustSection = () => {
           </div>
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
             <a
-              href="tel:+919876543210"
+              href="tel:+918199002004"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
                 gap: 8,
-                background: "#EA580C",
-                color: "#fff",
+                background: "#000000",
+                color: "#ff5a00",
                 padding: "14px 28px",
                 borderRadius: "8px",
-                fontWeight: 600,
+                fontWeight: 700,
                 textDecoration: "none",
                 fontSize: "0.95rem",
                 transition: "all 0.3s",
                 whiteSpace: "nowrap",
+                border: "2px solid #000000",
               }}
-              onMouseEnter={(e) => e.currentTarget.style.background = "#c2410c"}
-              onMouseLeave={(e) => e.currentTarget.style.background = "#EA580C"}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#111"; e.currentTarget.style.color = "#fff"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#000"; e.currentTarget.style.color = "#ff5a00"; }}
             >
               📞 Call Now
             </a>
@@ -114,19 +116,19 @@ export const TrustSection = () => {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: 8,
-                background: "rgba(255,255,255,0.15)",
+                background: "transparent",
                 color: "#fff",
                 padding: "14px 28px",
                 borderRadius: "8px",
-                fontWeight: 600,
+                fontWeight: 700,
                 textDecoration: "none",
                 fontSize: "0.95rem",
-                border: "2px solid rgba(255,255,255,0.4)",
+                border: "2px solid rgba(255,255,255,0.5)",
                 transition: "all 0.3s",
                 whiteSpace: "nowrap",
               }}
-              onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.25)"}
-              onMouseLeave={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.15)"}
+              onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.1)"}
+              onMouseLeave={(e) => e.currentTarget.style.background = "transparent"}
             >
               Get Quote <ArrowRight size={16} weight="bold" />
             </a>
@@ -135,7 +137,7 @@ export const TrustSection = () => {
 
         {/* How it works */}
         <div className="reveal" style={{ textAlign: "center", marginBottom: "3rem" }}>
-          <div className="section-badge">
+          <div className="section-badge" style={{ margin: "0 auto 1rem", justifyContent: "center" }}>
             <Shield size={14} weight="fill" />
             How It Works
           </div>
@@ -144,33 +146,30 @@ export const TrustSection = () => {
         </div>
 
         <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
-            gap: "1.5rem",
-          }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          style={{ maxWidth: "1100px", margin: "0 auto" }}
         >
           {steps.map((s, i) => (
             <div
               key={s.num}
               className={`reveal delay-${(i + 1) * 100}`}
               style={{
-                background: "#fff",
+                background: "#FFFFFF",
                 borderRadius: "16px",
                 padding: "2rem 1.5rem",
-                border: "1px solid #E5E7EB",
+                border: "1px solid #F3F4F6",
                 textAlign: "center",
                 transition: "all 0.3s",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-6px)"; e.currentTarget.style.boxShadow = "0 20px 40px rgba(29,78,216,0.10)"; e.currentTarget.style.borderColor = "#1D4ED8"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; e.currentTarget.style.borderColor = "#E5E7EB"; }}
+              onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-6px)"; e.currentTarget.style.boxShadow = "var(--shadow-md)"; e.currentTarget.style.borderColor = "var(--primary)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; e.currentTarget.style.borderColor = "#F3F4F6"; }}
             >
               <div
                 style={{
                   width: 56,
                   height: 56,
                   borderRadius: "50%",
-                  background: "#1D4ED8",
+                  background: "var(--primary)",
                   color: "#fff",
                   fontFamily: "Poppins, sans-serif",
                   fontWeight: 800,
@@ -179,15 +178,15 @@ export const TrustSection = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   margin: "0 auto 1.25rem",
-                  boxShadow: "0 0 0 8px #DBEAFE",
+                  boxShadow: "0 0 0 8px rgba(245, 158, 11, 0.15)",
                 }}
               >
                 {s.num}
               </div>
-              <h3 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 600, fontSize: "1rem", color: "#0F172A", margin: "0 0 0.5rem" }}>
+              <h3 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 600, fontSize: "1rem", color: "var(--text-dark)", margin: "0 0 0.5rem" }}>
                 {s.title}
               </h3>
-              <p style={{ fontSize: "0.85rem", color: "#6b7280", lineHeight: 1.65, margin: 0 }}>
+              <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", lineHeight: 1.65, margin: 0 }}>
                 {s.desc}
               </p>
             </div>

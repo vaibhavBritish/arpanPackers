@@ -8,6 +8,11 @@ import { LeadForm } from "@/components/LeadForm";
 export const metadata = {
   title: "Arpan Packers and Movers - Reliable Moving Services in Chennai",
   description: "Arpan Packers and Movers offers top-notch relocation services in Chennai. Get a free quote for household, office, and vehicle moving.",
+  icons: {
+    icon: "/favicon-main.png",
+    shortcut: "/favicon-main.png",
+    apple: "/favicon-main.png",
+  },
 };
 
 export const viewport = {
@@ -17,11 +22,16 @@ export const viewport = {
 
 import { ScrollReveal } from "@/components/ScrollReveal";
 import Script from "next/script";
+import { NavigationWrapper } from "@/components/NavigationWrapper";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://maps.google.com" />
+        <link rel="preconnect" href="https://maps.gstatic.com" />
+        <link rel="preconnect" href="https://www.google.com" />
+        <link rel="dns-prefetch" href="https://maps.google.com" />
         {/* Google tag (gtag.js) */}
         <Script
           async
@@ -41,13 +51,17 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning>
         <div className="App" data-testid="app-container">
           <ScrollReveal />
-          <TopBar />
-          <Header />
+          <NavigationWrapper>
+            <TopBar />
+            <Header />
+          </NavigationWrapper>
           <main>{children}</main>
-          <LeadForm />
-          <Footer />
+          <NavigationWrapper>
+            <LeadForm />
+            <Footer />
+            <WhatsAppButton />
+          </NavigationWrapper>
           <Toaster />
-          <WhatsAppButton />
         </div>
       </body>
     </html>
@@ -56,7 +70,7 @@ export default function RootLayout({ children }) {
 
 const WhatsAppButton = () => (
   <a
-    href="https://wa.me/919876543210?text=Hello%2C%20I%20need%20moving%20services"
+    href="https://wa.me/918199002004?text=Hello%2C%20I%20need%20moving%20services"
     target="_blank"
     rel="noopener noreferrer"
     className="whatsapp-float"

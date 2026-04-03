@@ -61,7 +61,7 @@ export const Services = () => {
     <section
       id="services"
       ref={sectionRef}
-      style={{ background: "#fff", padding: "5rem 0" }}
+      style={{ background: "#FFFFFF", padding: "5rem 0" }}
       data-testid="services-section"
     >
       <div className="container-custom">
@@ -100,20 +100,20 @@ export const Services = () => {
                   fontFamily: "Poppins, sans-serif",
                   fontWeight: 600,
                   fontSize: "1.1rem",
-                  color: "#0F172A",
+                  color: "var(--text-dark)",
                   margin: 0,
                 }}
               >
                 {svc.title}
               </h3>
 
-              <p style={{ color: "#6b7280", fontSize: "0.88rem", lineHeight: 1.65, margin: 0 }}>
+              <p style={{ color: "var(--text-muted)", fontSize: "0.88rem", lineHeight: 1.65, margin: 0 }}>
                 {svc.description}
               </p>
 
               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem" }}>
                 {svc.features.map((f) => (
-                  <span key={f} className="service-feature-tag">
+                  <span key={f} className="service-feature-tag" style={{ background: "rgba(255, 90, 0, 0.05)", color: "#4B5563", border: "1px solid rgba(255, 90, 0, 0.15)" }}>
                     <Check size={11} weight="bold" />
                     {f}
                   </span>
@@ -127,7 +127,7 @@ export const Services = () => {
                   gap: 4,
                   fontSize: "0.85rem",
                   fontWeight: 600,
-                  color: "#1D4ED8",
+                  color: "var(--primary)",
                   cursor: "pointer",
                   marginTop: "auto",
                 }}

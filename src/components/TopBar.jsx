@@ -16,32 +16,32 @@ export const TopBar = () => (
     >
       <div className="flex items-center gap-6">
         <a
-          href="tel:+919876543210"
-          style={{ display: "flex", alignItems: "center", gap: 6, color: "#cbd5e1", textDecoration: "none", fontSize: "0.82rem" }}
+          href="tel:+918199002004"
+          style={{ display: "flex", alignItems: "center", gap: 6, color: "#fff", textDecoration: "none", fontSize: "0.82rem", fontWeight: 600 }}
         >
-          <Phone size={14} weight="fill" style={{ color: "#EA580C" }} />
+          <Phone size={14} weight="fill" style={{ color: "#fff" }} />
           +91 81990 02004
         </a>
         <a
           href="mailto:info@arpanpackers.com"
-          style={{ alignItems: "center", gap: 6, color: "#cbd5e1", textDecoration: "none", fontSize: "0.82rem" }}
+          style={{ alignItems: "center", gap: 6, color: "#fff", textDecoration: "none", fontSize: "0.82rem", fontWeight: 600 }}
           className="hidden sm:flex"
         >
-          <EnvelopeSimple size={14} weight="fill" style={{ color: "#EA580C" }} />
+          <EnvelopeSimple size={14} weight="fill" style={{ color: "#fff" }} />
           info@arpanpackers.com
         </a>
       </div>
 
       <div className="flex items-center gap-4">
-        <div style={{ alignItems: "center", gap: 5, fontSize: "0.8rem", color: "#94a3b8" }} className="hidden lg:flex">
-          <MapPin size={13} weight="fill" style={{ color: "#EA580C" }} />
+        <div style={{ alignItems: "center", gap: 5, fontSize: "0.80rem", color: "#fff", fontWeight: 600 }} className="hidden lg:flex">
+          <MapPin size={13} weight="fill" style={{ color: "#fff" }} />
           Anna Salai, Chennai - 600002
         </div>
         <div className="flex gap-3">
-          <a href="#" style={{ color: "#94a3b8", transition: "color 0.2s" }} onMouseEnter={e => e.target.style.color = "#fff"} onMouseLeave={e => e.target.style.color = "#94a3b8"} aria-label="Facebook">
+          <a href="#" style={{ color: "#fff", transition: "opacity 0.2s" }} onMouseEnter={e => e.target.style.opacity = "0.7"} onMouseLeave={e => e.target.style.opacity = "1"} aria-label="Facebook">
             <FacebookLogo size={18} weight="fill" />
           </a>
-          <a href="#" style={{ color: "#94a3b8", transition: "color 0.2s" }} onMouseEnter={e => e.target.style.color = "#fff"} onMouseLeave={e => e.target.style.color = "#94a3b8"} aria-label="Instagram">
+          <a href="#" style={{ color: "#fff", transition: "opacity 0.2s" }} onMouseEnter={e => e.target.style.opacity = "0.7"} onMouseLeave={e => e.target.style.opacity = "1"} aria-label="Instagram">
             <InstagramLogo size={18} weight="fill" />
           </a>
         </div>

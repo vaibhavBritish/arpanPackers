@@ -5,14 +5,15 @@ import { useRouter } from "next/navigation";
 import { Medal, UsersThree, ShieldCheck, Globe, ArrowRight } from "@phosphor-icons/react";
 
 const PageHero = ({ title, subtitle, breadcrumb }) => (
-  <section style={{ background: "linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)", padding: "4rem 0 3rem", borderBottom: "1px solid #DBEAFE" }}>
+  <section style={{ background: "var(--navy)", padding: "5rem 0 4rem", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
     <div className="container-custom">
-      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center", fontSize: "0.82rem", color: "#6b7280", marginBottom: "1rem" }}>
-        <Link href="/" style={{ color: "#1D4ED8", textDecoration: "none" }}>Home</Link>
-        <span>›</span><span>{breadcrumb}</span>
+      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center", fontSize: "0.82rem", color: "#D1D5DB", marginBottom: "1rem" }}>
+        <Link href="/" style={{ color: "#ff5a00", textDecoration: "none", fontWeight: 600 }}>Home</Link>
+        <span>›</span>
+        <span style={{ color: "#9CA3AF" }}>{breadcrumb}</span>
       </div>
-      <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(2rem, 5vw, 3rem)", color: "#0F172A", margin: "0 0 1rem" }}>{title}</h1>
-      <p style={{ color: "#6b7280", fontSize: "1.05rem", maxWidth: 560, lineHeight: 1.7, margin: 0 }}>{subtitle}</p>
+      <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 6vw, 3.5rem)", color: "#FFFFFF", margin: "0 0 1.25rem", lineHeight: 1.1 }}>{title}</h1>
+      <p style={{ color: "#E5E7EB", fontSize: "1.1rem", maxWidth: 600, lineHeight: 1.7, margin: 0 }}>{subtitle}</p>
     </div>
   </section>
 );
@@ -25,9 +26,9 @@ const Story = () => (
 
         {/* Left Content */}
         <div>
-          <div className="text-sm text-blue-600 mb-2">📖 Our Story</div>
+          <div className="text-sm text-primary mb-2">📖 Our Story</div>
 
-          <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             15 Years of Trusted Moving
           </h2>
 
@@ -50,7 +51,7 @@ const Story = () => (
             {["ISO 9001 Certified", "IBA Approved", "Google Guaranteed", "5-Star Rated"].map((b) => (
               <span
                 key={b}
-                className="bg-blue-50 text-blue-700 border px-3 py-1 rounded-full text-xs font-semibold"
+                className="bg-primary/10 text-primary border border-primary/20 px-3 py-1 rounded-full text-xs font-semibold"
               >
                 ✓ {b}
               </span>
@@ -61,14 +62,14 @@ const Story = () => (
         {/* Right Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
           {[
-            { value: "2010", label: "Founded", icon: "🏢", bg: "bg-blue-50", color: "text-blue-700" },
-            { value: "50+", label: "Vehicles", icon: "🚚", bg: "bg-orange-50", color: "text-orange-600" },
-            { value: "200+", label: "Team Members", icon: "👷", bg: "bg-green-50", color: "text-green-600" },
-            { value: "10K+", label: "Happy Moves", icon: "😊", bg: "bg-purple-50", color: "text-purple-600" },
+            { value: "2010", label: "Founded", icon: "🏢", bg: "bg-gray-50", color: "text-primary" },
+            { value: "50+", label: "Vehicles", icon: "🚚", bg: "bg-gray-50", color: "text-orange-600" },
+            { value: "200+", label: "Team Members", icon: "👷", bg: "bg-gray-50", color: "text-green-600" },
+            { value: "10K+", label: "Happy Moves", icon: "😊", bg: "bg-gray-50", color: "text-purple-600" },
           ].map((s) => (
             <div
               key={s.label}
-              className={`${s.bg} rounded-xl p-4 md:p-6 text-center`}
+              className={`${s.bg} border border-gray-100 rounded-xl p-4 md:p-6 text-center`}
             >
               <div className="text-2xl mb-2">{s.icon}</div>
               <div className={`text-xl md:text-2xl font-bold ${s.color}`}>
@@ -87,24 +88,24 @@ const Story = () => (
 );
 
 const Values = () => (
-  <section style={{ background: "#F8FAFC", padding: "5rem 0" }}>
+  <section style={{ background: "var(--navy)", padding: "5rem 0", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
     <div className="container-custom">
       <div className="reveal" style={{ textAlign: "center", marginBottom: "3rem" }}>
-        <div className="section-badge">💡 Our Values</div>
-        <h2 className="section-title">What Drives Us</h2>
-        <div className="divider" style={{ margin: "0.75rem auto 0" }} />
+        <div className="section-badge" style={{ background: "rgba(255, 90, 0, 0.1)", color: "#ff5a00", border: "1px solid rgba(255, 90, 0, 0.2)" }}>💡 Our Values</div>
+        <h2 className="section-title" style={{ color: "#fff" }}>What Drives Us</h2>
+        <div className="divider" style={{ background: "#ff5a00", margin: "0.75rem auto 0" }} />
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1.5rem" }}>
         {[
-          { icon: ShieldCheck, title: "Integrity First", desc: "We are honest and transparent. No hidden charges, no false promises. What we quote is what you pay.", color: "icon-blue" },
+          { icon: ShieldCheck, title: "Integrity First", desc: "We are honest and transparent. No hidden charges, no false promises. What we quote is what you pay.", color: "icon-orange" },
           { icon: Medal, title: "Excellence Always", desc: "We never settle for 'good enough'. Every move is executed with the same care and attention you deserve.", color: "icon-orange" },
-          { icon: UsersThree, title: "People-Centric", desc: "Our customers are family. We listen, we care, and we go the extra mile to exceed expectations.", color: "icon-green" },
-          { icon: Globe, title: "Community Impact", desc: "We believe in building Chennai. From green vehicles to local hiring — we invest in our community.", color: "icon-purple" },
+          { icon: UsersThree, title: "People-Centric", desc: "Our customers are family. We listen, we care, and we go the extra mile to exceed expectations.", color: "icon-orange" },
+          { icon: Globe, title: "Community Impact", desc: "We believe in building Chennai. From green vehicles to local hiring — we invest in our community.", color: "icon-orange" },
         ].map((v, i) => (
-          <div key={v.title} className={`feature-card reveal delay-${(i + 1) * 100}`}>
-            <div className={`icon-box ${v.color}`}><v.icon size={26} weight="duotone" /></div>
-            <h3 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 600, fontSize: "1rem", color: "#0F172A", margin: "0 0 0.5rem" }}>{v.title}</h3>
-            <p style={{ color: "#6b7280", fontSize: "0.875rem", lineHeight: 1.65, margin: 0 }}>{v.desc}</p>
+          <div key={v.title} className={`feature-card reveal delay-${(i + 1) * 100}`} style={{ background: "var(--navy-mid)", border: "1px solid rgba(255,255,255,0.05)" }}>
+            <div className={`icon-box ${v.color}`} style={{ background: "rgba(255, 90, 0, 0.1)", color: "#ff5a00" }}><v.icon size={26} weight="duotone" /></div>
+            <h3 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 600, fontSize: "1rem", color: "#FFFFFF", margin: "0 0 0.5rem" }}>{v.title}</h3>
+            <p style={{ color: "#D1D5DB", fontSize: "0.875rem", lineHeight: 1.65, margin: 0 }}>{v.desc}</p>
           </div>
         ))}
       </div>
@@ -113,12 +114,12 @@ const Values = () => (
 );
 
 const Timeline = () => (
-  <section style={{ background: "#fff", padding: "5rem 0" }}>
+  <section style={{ background: "#FFFFFF", padding: "5rem 0", borderTop: "1px solid #F3F4F6" }}>
     <div className="container-custom">
       <div className="reveal" style={{ textAlign: "center", marginBottom: "3rem" }}>
-        <div className="section-badge">📅 Milestones</div>
-        <h2 className="section-title">Our Journey</h2>
-        <div className="divider" style={{ margin: "0.75rem auto 0" }} />
+        <div className="section-badge" style={{ background: "rgba(255, 90, 0, 0.1)", color: "#ff5a00", border: "1px solid rgba(255, 90, 0, 0.2)" }}>📅 Milestones</div>
+        <h2 className="section-title" style={{ color: "#111827" }}>Our Journey</h2>
+        <div className="divider" style={{ background: "#ff5a00", margin: "0.75rem auto 0" }} />
       </div>
       <div style={{ maxWidth: 700, margin: "0 auto", display: "flex", flexDirection: "column", gap: 0 }}>
         {[
@@ -132,12 +133,12 @@ const Timeline = () => (
           <div key={m.year} className={`reveal delay-${(i % 3 + 1) * 100}`} style={{ display: "flex", gap: "1.5rem", paddingBottom: "2rem", position: "relative" }}>
             {/* Line */}
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flexShrink: 0 }}>
-              <div style={{ width: 48, height: 48, borderRadius: "50%", background: i % 2 === 0 ? "#1D4ED8" : "#EA580C", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "0.75rem", flexShrink: 0, zIndex: 1 }}>{m.year}</div>
-              {i < 5 && <div style={{ width: 2, flex: 1, background: "#E5E7EB", marginTop: 4 }} />}
+              <div style={{ width: 48, height: 48, borderRadius: "50%", background: "#ff5a00", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "0.75rem", flexShrink: 0, zIndex: 1 }}>{m.year}</div>
+              {i < 5 && <div style={{ width: 2, flex: 1, background: "#F3F4F6", marginTop: 4 }} />}
             </div>
-            <div style={{ background: "#F8FAFC", borderRadius: 12, padding: "1.25rem 1.5rem", border: "1px solid #E5E7EB", flex: 1, marginTop: 6 }}>
-              <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 600, color: "#0F172A", marginBottom: 4 }}>{m.title}</div>
-              <p style={{ color: "#6b7280", fontSize: "0.875rem", margin: 0, lineHeight: 1.65 }}>{m.desc}</p>
+            <div style={{ background: "#FFFFFF", borderRadius: 12, padding: "1.25rem 1.5rem", border: "1px solid #F3F4F6", flex: 1, marginTop: 6, boxShadow: "0 4px 15px rgba(0,0,0,0.03)" }}>
+              <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 600, color: "#111827", marginBottom: 4 }}>{m.title}</div>
+              <p style={{ color: "#4B5563", fontSize: "0.875rem", margin: 0, lineHeight: 1.65 }}>{m.desc}</p>
             </div>
           </div>
         ))}
@@ -147,25 +148,25 @@ const Timeline = () => (
 );
 
 const Team = () => (
-  <section style={{ background: "#F8FAFC", padding: "5rem 0" }}>
+  <section style={{ background: "var(--navy)", padding: "5rem 0", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
     <div className="container-custom">
       <div className="reveal" style={{ textAlign: "center", marginBottom: "3rem" }}>
-        <div className="section-badge">👥 Our Team</div>
-        <h2 className="section-title">Meet Our Leadership</h2>
-        <div className="divider" style={{ margin: "0.75rem auto 0" }} />
+        <div className="section-badge" style={{ background: "rgba(255, 90, 0, 0.1)", color: "#ff5a00", border: "1px solid rgba(255, 90, 0, 0.2)" }}>👥 Our Team</div>
+        <h2 className="section-title" style={{ color: "#fff" }}>Meet Our Leadership</h2>
+        <div className="divider" style={{ background: "#ff5a00", margin: "0.75rem auto 0" }} />
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "1.5rem" }}>
         {[
-          { name: "Arpan Kumar", role: "Founder & CEO", exp: "15+ years", color: "#1D4ED8", init: "AK" },
-          { name: "Priya Nair", role: "Operations Head", exp: "10+ years", color: "#EA580C", init: "PN" },
-          { name: "Ramesh S.", role: "Fleet Manager", exp: "12+ years", color: "#16a34a", init: "RS" },
-          { name: "Divya M.", role: "Customer Success", exp: "8+ years", color: "#9333ea", init: "DM" },
+          { name: "Arpan Kumar", role: "Founder & CEO", exp: "15+ years", color: "#ff5a00", init: "AK" },
+          { name: "Priya Nair", role: "Operations Head", exp: "10+ years", color: "#ff5a00", init: "PN" },
+          { name: "Ramesh S.", role: "Fleet Manager", exp: "12+ years", color: "#22c55e", init: "RS" },
+          { name: "Divya M.", role: "Customer Success", exp: "8+ years", color: "#a855f7", init: "DM" },
         ].map((t, i) => (
-          <div key={t.name} className={`card reveal delay-${(i + 1) * 100}`} style={{ textAlign: "center" }}>
-            <div style={{ width: 80, height: 80, borderRadius: "50%", background: t.color, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "1.4rem", margin: "0 auto 1rem", boxShadow: `0 8px 24px ${t.color}40` }}>{t.init}</div>
-            <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 700, color: "#0F172A", marginBottom: 4 }}>{t.name}</div>
-            <div style={{ color: t.color, fontSize: "0.82rem", fontWeight: 600, marginBottom: 4 }}>{t.role}</div>
-            <div style={{ color: "#94a3b8", fontSize: "0.78rem" }}>{t.exp} experience</div>
+          <div key={t.name} className={`card reveal delay-${(i + 1) * 100}`} style={{ textAlign: "center", background: "var(--navy-mid)", border: "1px solid rgba(255,255,255,0.05)" }}>
+            <div style={{ width: 80, height: 80, borderRadius: "50%", background: "rgba(255, 90, 0, 0.1)", color: "#ff5a00", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "1.4rem", margin: "0 auto 1rem", border: "2px solid #ff5a00" }}>{t.init}</div>
+            <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 700, color: "#FFFFFF", marginBottom: 4 }}>{t.name}</div>
+            <div style={{ color: "#ff5a00", fontSize: "0.82rem", fontWeight: 600, marginBottom: 4 }}>{t.role}</div>
+            <div style={{ color: "#D1D5DB", fontSize: "0.78rem" }}>{t.exp} experience</div>
           </div>
         ))}
       </div>
@@ -186,14 +187,14 @@ export default function AboutPage() {
       <Values />
       <Timeline />
       <Team />
-      <section style={{ background: "#1D4ED8", padding: "4rem 0", textAlign: "center" }}>
+      <section style={{ background: "var(--primary)", padding: "4rem 0", textAlign: "center" }}>
         <div className="container-custom">
           <div className="reveal">
-            <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem, 3vw, 2rem)", color: "#fff", margin: "0 0 1rem" }}>
+            <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem, 3vw, 2rem)", color: "#000000", margin: "0 0 1rem" }}>
               Join 10,000+ Happy Families
             </h2>
-            <p style={{ color: "#bfdbfe", marginBottom: "2rem" }}>Experience the Arpan difference — where your move is our priority.</p>
-            <button onClick={() => router.push("/get-quote")} className="btn-secondary" style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
+            <p style={{ color: "rgba(0,0,0,0.7)", marginBottom: "2rem", fontWeight: 500 }}>Experience the Arpan difference — where your move is our priority.</p>
+            <button onClick={() => router.push("/get-quote")} className="btn-secondary" style={{ background: "#000814", color: "#fff", display: "inline-flex", alignItems: "center", gap: 8, border: "none", padding: "12px 24px", borderRadius: "4px", fontWeight: 600 }}>
               Get Your Free Quote <ArrowRight size={16} />
             </button>
           </div>

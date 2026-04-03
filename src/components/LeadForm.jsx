@@ -52,15 +52,16 @@ export const LeadForm = () => {
     <section
       data-testid="lead-form-section"
       style={{
-        background: "linear-gradient(135deg, #0F172A 0%, #1e293b 100%)",
+        background: "#FFFFFF",
         padding: "5rem 0",
         position: "relative",
         overflow: "hidden",
+        borderTop: "1px solid #F3F4F6",
       }}
     >
       {/* Background decorative circles */}
-      <div style={{ position: "absolute", top: -80, right: -80, width: 320, height: 320, borderRadius: "50%", background: "rgba(29,78,216,0.12)", pointerEvents: "none" }} />
-      <div style={{ position: "absolute", bottom: -60, left: -60, width: 240, height: 240, borderRadius: "50%", background: "rgba(234,88,12,0.10)", pointerEvents: "none" }} />
+      <div style={{ position: "absolute", top: -80, right: -80, width: 320, height: 320, borderRadius: "50%", background: "rgba(255, 90, 0, 0.05)", pointerEvents: "none" }} />
+      <div style={{ position: "absolute", bottom: -60, left: -60, width: 240, height: 240, borderRadius: "50%", background: "rgba(0, 8, 20, 0.03)", pointerEvents: "none" }} />
 
       <div className="container-custom" style={{ position: "relative", zIndex: 1 }}>
         <div
@@ -88,20 +89,20 @@ export const LeadForm = () => {
             </div>
 
             <h2
-              style={{
-                fontFamily: "Poppins, sans-serif",
-                fontWeight: 800,
-                fontSize: "clamp(1.75rem, 4vw, 2.6rem)",
-                color: "#fff",
-                margin: "0 0 1rem",
-                lineHeight: 1.25,
-              }}
-            >
-              Get a Free Quote &amp;<br />
-              <span style={{ color: "#fb923c" }}>Expert Advice</span> Today
-            </h2>
+                style={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: 800,
+                  fontSize: "clamp(1.75rem, 4vw, 2.6rem)",
+                  color: "#111827",
+                  margin: "0 0 1rem",
+                  lineHeight: 1.25,
+                }}
+              >
+                Get a Free Quote &amp;<br />
+                <span style={{ color: "var(--primary)" }}>Expert Advice</span> Today
+              </h2>
 
-            <p style={{ color: "#94a3b8", fontSize: "1rem", lineHeight: 1.75, marginBottom: "2rem", maxWidth: 420 }}>
+            <p style={{ color: "#374151", fontSize: "1rem", lineHeight: 1.75, marginBottom: "2rem", maxWidth: 420 }}>
               Tell us a little about your move and our relocation expert will call you
               back within 30 minutes with a personalised quote — absolutely free.
             </p>
@@ -114,8 +115,8 @@ export const LeadForm = () => {
                 "No obligation, no hidden charges",
                 "Available 7 days a week",
               ].map((b) => (
-                <div key={b} style={{ display: "flex", alignItems: "center", gap: 10, color: "#cbd5e1", fontSize: "0.92rem" }}>
-                  <CheckCircle size={18} weight="fill" style={{ color: "#4ade80", flexShrink: 0 }} />
+                <div key={b} style={{ display: "flex", alignItems: "center", gap: 10, color: "#4B5563", fontSize: "0.92rem" }}>
+                  <CheckCircle size={18} weight="fill" style={{ color: "#10B981", flexShrink: 0 }} />
                   {b}
                 </div>
               ))}
@@ -124,7 +125,7 @@ export const LeadForm = () => {
             {/* Trust badges */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "0.65rem", marginTop: "2rem" }}>
               {["⭐ 4.9/5 Rating", "🛡️ ISO Certified", "✅ 10K+ Moves", "🔒 Insured"].map((b) => (
-                <span key={b} style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.12)", color: "#94a3b8", padding: "5px 12px", borderRadius: 99, fontSize: "0.78rem" }}>
+                <span key={b} style={{ background: "rgba(0,0,0,0.03)", border: "1px solid rgba(0,0,0,0.08)", color: "#6B7280", padding: "5px 12px", borderRadius: 99, fontSize: "0.78rem" }}>
                   {b}
                 </span>
               ))}
@@ -134,37 +135,38 @@ export const LeadForm = () => {
           {/* ── RIGHT: Form ── */}
           <div
             style={{
-              background: "#fff",
+              background: "var(--navy)",
               borderRadius: 20,
               padding: "2.5rem",
-              boxShadow: "0 25px 60px rgba(0,0,0,0.35)",
+              boxShadow: "0 25px 60px rgba(0,0,0,0.15)",
+              border: "1px solid rgba(255,255,255,0.05)",
             }}
           >
             {submitted ? (
               /* Success state */
               <div style={{ textAlign: "center", padding: "1.5rem 0" }}>
-                <div
+                  <div
                   style={{
                     width: 72, height: 72, borderRadius: "50%",
-                    background: "#DCFCE7",
+                    background: "rgba(22, 163, 74, 0.1)",
                     display: "flex", alignItems: "center", justifyContent: "center",
                     margin: "0 auto 1.25rem",
                   }}
                 >
                   <CheckCircle size={40} weight="fill" style={{ color: "#16a34a" }} />
                 </div>
-                <h3 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "1.35rem", color: "#0F172A", margin: "0 0 0.65rem" }}>
+                <h3 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "1.35rem", color: "#FFFFFF", margin: "0 0 0.65rem" }}>
                   We'll Call You Shortly! 🎉
                 </h3>
-                <p style={{ color: "#6b7280", fontSize: "0.9rem", lineHeight: 1.7, margin: "0 0 1.5rem" }}>
+                <p style={{ color: "#A1A1AA", fontSize: "0.9rem", lineHeight: 1.7, margin: "0 0 1.5rem" }}>
                   Your request has been received. Our moving expert will call you within
                   <strong> 30 minutes</strong> with a free personalised quote.
                 </p>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+918199002004"
                   style={{
                     display: "inline-flex", alignItems: "center", gap: 8,
-                    background: "#1D4ED8", color: "#fff",
+                    background: "var(--primary)", color: "#fff",
                     padding: "12px 24px", borderRadius: 8,
                     fontWeight: 600, fontSize: "0.9rem", textDecoration: "none",
                   }}
@@ -183,10 +185,10 @@ export const LeadForm = () => {
               /* Form */
               <>
                 <div style={{ marginBottom: "1.5rem" }}>
-                  <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "1.2rem", color: "#0F172A", marginBottom: 4 }}>
+                  <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "1.2rem", color: "#FFFFFF", marginBottom: 4 }}>
                     Request a Free Callback
                   </div>
-                  <div style={{ fontSize: "0.82rem", color: "#6b7280" }}>
+                  <div style={{ fontSize: "0.82rem", color: "#A1A1AA" }}>
                     Fill in your details and we'll reach you within 30 min.
                   </div>
                 </div>
@@ -251,7 +253,7 @@ export const LeadForm = () => {
                       name="service"
                       value={form.service}
                       onChange={handleChange}
-                      style={{ ...inputStyle, paddingLeft: "0.85rem", appearance: "none", background: "#F8FAFC" }}
+                      style={{ ...inputStyle, paddingLeft: "0.85rem", appearance: "none", background: "#001219", borderColor: "rgba(255,255,255,0.1)" }}
                       data-testid="lead-service-select"
                     >
                       <option value="">Select a service…</option>
@@ -306,7 +308,7 @@ const labelStyle = {
   display: "block",
   fontSize: "0.78rem",
   fontWeight: 600,
-  color: "#374151",
+  color: "#A1A1AA",
   marginBottom: "0.35rem",
   textTransform: "uppercase",
   letterSpacing: "0.04em",
@@ -329,11 +331,11 @@ const inputIcon = {
 const inputStyle = {
   width: "100%",
   padding: "10px 0.85rem 10px 2.5rem",
-  border: "1.5px solid #E5E7EB",
+  border: "1.5px solid rgba(255,255,255,0.1)",
   borderRadius: 8,
   fontSize: "0.9rem",
-  color: "#0F172A",
-  background: "#F8FAFC",
+  color: "#FFFFFF",
+  background: "#001219",
   outline: "none",
   transition: "border-color 0.2s",
   boxSizing: "border-box",
