@@ -33,7 +33,7 @@ export const MapSection = () => {
               filter: "invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%)",
               display: "block"
             }}
-            title="Arpan Packers and Movers Location"
+            title="Arpan India Packers & Movers Location"
           />
         </div>
       </div>

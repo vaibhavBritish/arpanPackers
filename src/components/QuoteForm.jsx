@@ -93,7 +93,7 @@ export const QuoteForm = () => {
               Quote Request Submitted! 🎉
             </h3>
             <p style={{ color: "#D1D5DB", marginBottom: "1.5rem", lineHeight: 1.7 }}>
-              Thank you for choosing Arpan Packers. Our team will review your request and
+              Thank you for choosing Arpan India Packers & Movers. Our team will review your request and
               contact you within 2 hours with a detailed quote.
             </p>
             <button

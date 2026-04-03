@@ -6,8 +6,8 @@ import { Footer } from "@/components/Footer";
 import { LeadForm } from "@/components/LeadForm";
 
 export const metadata = {
-  title: "Arpan Packers and Movers - Reliable Moving Services in Chennai",
-  description: "Arpan Packers and Movers offers top-notch relocation services in Chennai. Get a free quote for household, office, and vehicle moving.",
+  title: "Arpan India Packers & Movers - Reliable Moving Services in Chennai",
+  description: "Arpan India Packers & Movers offers top-notch relocation services in Chennai. Get a free quote for household, office, and vehicle moving.",
   icons: {
     icon: "/favicon-main.png",
     shortcut: "/favicon-main.png",

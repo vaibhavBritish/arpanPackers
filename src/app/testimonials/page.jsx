@@ -15,7 +15,7 @@ const PageHero = () => (
       </div>
       <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 6vw, 3.5rem)", color: "#FFFFFF", margin: "0 0 1.25rem", lineHeight: 1.1 }}>Customer Reviews</h1>
       <p style={{ color: "#E5E7EB", fontSize: "1.1rem", maxWidth: 600, lineHeight: 1.7, margin: 0 }}>
-        Over 2,400 verified Google reviews. Read what our customers say about their moving experience with Arpan Packers.
+        Over 2,400 verified Google reviews. Read what our customers say about their moving experience with Arpan India Packers & Movers.
       </p>
     </div>
   </section>
@@ -32,7 +32,7 @@ const RatingBar = ({ label, count, total, color }) => (
 );
 
 const allTestimonials = [
-  { name: "Priya Sharma", loc: "T Nagar → Velachery", rating: 5, service: "Home", date: "Jan 2026", color: "#1D4ED8", text: "Outstanding service from start to finish! The team arrived on time, packed everything professionally and delivered safely. Highly recommend Arpan Packers to anyone." },
+  { name: "Priya Sharma", loc: "T Nagar → Velachery", rating: 5, service: "Home", date: "Jan 2026", color: "#1D4ED8", text: "Outstanding service from start to finish! The team arrived on time, packed everything professionally and delivered safely. Highly recommend Arpan India Packers & Movers to anyone." },
   { name: "Rajesh Kumar", loc: "Office – Anna Nagar", rating: 5, service: "Office", date: "Dec 2025", color: "#EA580C", text: "We moved our entire office over one weekend with literally zero downtime. The team was organized, fast, and even helped set up the workstations at the new location." },
   { name: "Lakshmi V.", loc: "Adyar → Bangalore", rating: 5, service: "Intercity", date: "Jan 2026", color: "#16a34a", text: "Moved from Chennai to Bangalore and I was worried about my antiques. They wrapped each piece individually and everything arrived perfect. GPS tracking gave me peace of mind throughout." },
   { name: "Suresh Menon", loc: "Mylapore → Tambaram", rating: 5, service: "Home", date: "Nov 2025", color: "#9333ea", text: "Best packing I've ever seen! They wrapped my TV and glass items so carefully. The final bill matched the quote exactly — no surprise charges. Will definitely use again." },

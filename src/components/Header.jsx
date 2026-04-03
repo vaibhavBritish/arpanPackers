@@ -52,13 +52,13 @@ export const Header = () => {
           <Link href="/" className="flex items-center gap-3">
             <img
               src="/mainLogo.png"
-              alt="Arpan Packers and Movers"
+              alt="Arpan India Packers & Movers"
               className={`transition-all duration-300 py-3 pointer-events-none object-contain ${scrolled ? "h-16 md:h-20" : "h-20 md:h-24"
                 }`}
             />
             <div className="flex flex-col leading-none">
               <span className="text-xl md:text-3xl font-black text-navy font-poppins tracking-tighter uppercase">
-                Arpan
+                Arpan India
               </span>
               <span className="text-[8px] md:text-[10px] font-bold text-primary uppercase tracking-[0.25em] -mt-0.5">
                 Packers and Movers
@@ -126,7 +126,7 @@ export const Header = () => {
             <div className="flex items-center justify-center gap-3 mb-10 mt-4">
               <img
                 src="/mainLogo.png"
-                alt="Arpan Packers and Movers"
+                alt="Arpan India Packers & Movers"
                 className="h-14 object-contain"
               />
               <div className="flex flex-col leading-none text-left">

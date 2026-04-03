@@ -33,7 +33,7 @@ const Story = () => (
           </h2>
 
           <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
-            Arpan Packers & Movers was founded in 2010 by Mr. Arpan Kumar with a single truck and a big dream —
+            Arpan India Packers & Movers was founded in 2010 by Mr. Arpan Kumar with a single truck and a big dream —
             to make moving a stress-free experience for the people of Chennai.
           </p>
 
@@ -123,7 +123,7 @@ const Timeline = () => (
       </div>
       <div style={{ maxWidth: 700, margin: "0 auto", display: "flex", flexDirection: "column", gap: 0 }}>
         {[
-          { year: "2010", title: "Founded in Chennai", desc: "Mr. Arpan Kumar starts Arpan Packers with 1 truck, 3 staff, and a dream." },
+          { year: "2010", title: "Founded in Chennai", desc: "Mr. Arpan Kumar starts Arpan India Packers & Movers with 1 truck, 3 staff, and a dream." },
           { year: "2013", title: "Fleet Expansion", desc: "Grew to 10 vehicles and moved to a larger warehouse. First 1,000 successful moves." },
           { year: "2016", title: "ISO Certification", desc: "Received ISO 9001:2015 certification for quality management systems." },
           { year: "2018", title: "Pan-India Launch", desc: "Expanded beyond Tamil Nadu to cover Bangalore, Hyderabad, and Mumbai routes." },
@@ -179,7 +179,7 @@ export default function AboutPage() {
   return (
     <main>
       <PageHero
-        title="About Arpan Packers"
+        title="About Arpan India Packers & Movers"
         subtitle="15 years of trust, care, and excellence. Discover our story, values, and the people who make every move memorable."
         breadcrumb="About"
       />

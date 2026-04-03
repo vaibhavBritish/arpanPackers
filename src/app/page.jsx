@@ -105,7 +105,7 @@ const FeaturedTestimonials = () => (
             { name: "Lakshmi V.", loc: "Adyar → Bangalore", text: "GPS tracking was reassuring. All items delivered safely. Transparent pricing with no hidden charges.", rating: 5, color: "rgba(255, 90, 0, 0.1)" },
             { name: "Arun V.", loc: "Anna Nagar → OMR", text: "Reliable and fast. The team was very professional and handled our household goods with care. Best price in Chennai.", rating: 5, color: "rgba(255, 90, 0, 0.1)" },
             { name: "Senthil M.", loc: "Vehicle Shifting", text: "Moved my car from Chennai to Delhi. Safe and secure transit. Extremely happy with the service.", rating: 5, color: "rgba(255, 90, 0, 0.1)" },
-            { name: "Meera K.", loc: "Home Relocation", text: "Stress-free moving experience. Arpan Packers made it so easy. Punctual and polite staff.", rating: 5, color: "rgba(255, 90, 0, 0.1)" },
+            { name: "Meera K.", loc: "Home Relocation", text: "Stress-free moving experience. Arpan India Packers & Movers made it so easy. Punctual and polite staff.", rating: 5, color: "rgba(255, 90, 0, 0.1)" },
             { name: "Deepak R.", loc: "Local Shifting", text: "Great local shifting experience. No damage and very quick. Highly recommended for any move in Chennai!", rating: 5, color: "rgba(255, 90, 0, 0.1)" },
           ].map((t, i) => (
             <CarouselItem key={i} className="pl-4 md:basis-1/2 lg:basis-1/3">

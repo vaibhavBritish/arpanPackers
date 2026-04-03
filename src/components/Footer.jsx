@@ -43,12 +43,12 @@ export const Footer = () => {
             <div className="flex items-center gap-3 mb-6 w-fit">
               <img
                 src="/mainLogo.png"
-                alt="Arpan Packers and Movers"
+                alt="Arpan India Packers & Movers"
                 className="h-12 md:h-14 w-auto object-contain block"
               />
               <div className="flex flex-col leading-none">
                 <span className="text-xl md:text-2xl font-black text-white font-poppins tracking-tighter uppercase whitespace-nowrap">
-                  Arpan
+                  Arpan India
                 </span>
                 <span className="text-[8px] md:text-[10px] font-bold text-primary uppercase tracking-widest -mt-0.5 whitespace-nowrap">
                   Packers and Movers
@@ -127,7 +127,7 @@ export const Footer = () => {
       <div style={{ padding: "1.25rem 0" }}>
         <div className="container-custom" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "0.75rem" }}>
           <p style={{ fontSize: "0.8rem", color: "var(--text-muted)", margin: 0 }}>
-            © 2026 Arpan Packers &amp; Movers. All rights reserved.
+            © 2026 Arpan India Packers & Movers &amp; Movers. All rights reserved.
           </p>
           <div style={{ display: "flex", gap: "1.5rem" }}>
             {["Privacy Policy", "Terms & Conditions", "Sitemap"].map((l) => (
