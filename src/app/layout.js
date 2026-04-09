@@ -6,8 +6,27 @@ import { Footer } from "@/components/Footer";
 import { LeadForm } from "@/components/LeadForm";
 
 export const metadata = {
-  title: "Arpan India Packers & Movers - Reliable Moving Services in Chennai",
-  description: "Arpan India Packers & Movers offers top-notch relocation services in Chennai. Get a free quote for household, office, and vehicle moving.",
+  title: "Arpan India Packers & Movers - Chennai",
+  description: "Reliable, affordable home & office relocation service in Chennai. Get a free quote today.",
+  alternates: {
+    canonical: "https://www.arpanpackerschennai.com/",
+  },
+  openGraph: {
+    title: "Arpan India Packers & Movers - Chennai",
+    description: "Reliable, affordable home & office relocation service in Chennai. Get a free quote today.",
+    url: "https://www.arpanpackerschennai.com/",
+    siteName: "Arpan India Packers & Movers",
+    images: [
+      {
+        url: "https://www.arpanpackerschennai.com/your-og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Arpan India Packers & Movers - Chennai",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
   icons: {
     icon: "/favicon-main.png",
     shortcut: "/favicon-main.png",
