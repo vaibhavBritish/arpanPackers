@@ -95,17 +95,17 @@ export const Footer = () => {
               <Phone size={16} weight="fill" style={{ color: "#ff5a00", marginTop: 2 }} />
               <div>
                 <div style={{ color: "#E5E7EB", fontSize: "0.85rem" }}>+91 81990 02004</div>
-                <div style={{ color: "#9CA3AF", fontSize: "0.78rem" }}>+91 44 2345 6789</div>
+                {/* <div style={{ color: "#9CA3AF", fontSize: "0.78rem" }}>+91 44 2345 6789</div> */}
               </div>
             </a>
-            <a href="mailto:info@arpanpackers.com" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none", marginBottom: "1rem" }}>
+            <a href="mailto:info@arpanpackerschennai.com" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none", marginBottom: "1rem" }}>
               <EnvelopeSimple size={16} weight="fill" style={{ color: "#ff5a00" }} />
-              <div style={{ color: "#E5E7EB", fontSize: "0.85rem" }}>info@arpanpackers.com</div>
+              <div style={{ color: "#E5E7EB", fontSize: "0.85rem" }}>info@arpanpackerschennai.com</div>
             </a>
             <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
               <MapPin size={16} weight="fill" style={{ color: "#ff5a00", marginTop: 2, flexShrink: 0 }} />
               <div style={{ color: "#E5E7EB", fontSize: "0.82rem", lineHeight: 1.6 }}>
-                Ground Floor, Sakthi Garden Phase 2, No 27B, Senneer Kuppam, Poonamallee, Chennai <br />Chennai – 600056, Tamil Nadu
+                Ground Floor, Sakthi Garden Phase 2, No 27B, Senneer Kuppam, Poonamallee <br />Chennai – 600056, Tamil Nadu
               </div>
             </div>
 

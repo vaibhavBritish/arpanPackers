@@ -25,9 +25,9 @@ export const Contact = () => {
     {
       icon: EnvelopeSimple,
       label: "Email Us",
-      value: "info@arpanpackers.com",
+      value: "info@arpanpackerschennai.com",
       sub: "We reply within hours",
-      href: "mailto:info@arpanpackers.com",
+      href: "mailto:info@arpanpackerschennai.com",
       color: "icon-orange",
     },
     {

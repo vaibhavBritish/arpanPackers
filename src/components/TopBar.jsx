@@ -23,19 +23,19 @@ export const TopBar = () => (
           +91 81990 02004
         </a>
         <a
-          href="mailto:info@arpanpackers.com"
+          href="mailto:info@arpanpackerschennai.com"
           style={{ alignItems: "center", gap: 6, color: "#fff", textDecoration: "none", fontSize: "0.82rem", fontWeight: 600 }}
           className="hidden sm:flex"
         >
           <EnvelopeSimple size={14} weight="fill" style={{ color: "#fff" }} />
-          info@arpanpackers.com
+          info@arpanpackerschennai.com
         </a>
       </div>
 
       <div className="flex items-center gap-4">
         <div style={{ alignItems: "center", gap: 5, fontSize: "0.80rem", color: "#fff", fontWeight: 600 }} className="hidden lg:flex">
           <MapPin size={13} weight="fill" style={{ color: "#fff" }} />
-          Anna Salai, Chennai - 600002
+          Chennai - 600056
         </div>
         <div className="flex gap-3">
           <a href="#" style={{ color: "#fff", transition: "opacity 0.2s" }} onMouseEnter={e => e.target.style.opacity = "0.7"} onMouseLeave={e => e.target.style.opacity = "1"} aria-label="Facebook">

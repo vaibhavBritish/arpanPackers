@@ -41,7 +41,7 @@ const PageHero = () => (
 const contacts = [
   { icon: Phone, label: "Call Us", value: "+91 81990 02004", sub: "+91 44 2345 6789", href: "tel:+918199002004", color: "text-orange-600" },
   { icon: WhatsappLogo, label: "WhatsApp", value: "+91 81990 02004", sub: "Quick response", href: "https://wa.me/918199002004", color: "text-[#25D366]" },
-  { icon: EnvelopeSimple, label: "Email", value: "info@arpanpackers.com", sub: "Reply within 2 hours", href: "mailto:info@arpanpackers.com", color: "text-orange-600" },
+  { icon: EnvelopeSimple, label: "Email", value: "info@arpanpackerschennai.com", sub: "Reply within 2 hours", href: "mailto:info@arpanpackerschennai.com", color: "text-orange-600" },
   { icon: MapPin, label: "Visit Us", value: "Anna Salai", sub: "Chennai", color: "text-orange-600" },
   { icon: Clock, label: "Hours", value: "Mon–Sun", sub: "24/7", color: "text-orange-600" },
   { icon: ChatCircle, label: "Live Chat", value: "Chat now", sub: "Instant support", color: "text-orange-600" },
@@ -114,7 +114,7 @@ const OfficeMap = () => (
       </h2>
 
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7823908!2d80.2585!3d13.0712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDA0JzE2LjMiTiA4MMKwMTUnMzAuNiJF!5e0!3m2!1sen!2sin!4v1617000000000!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5774327381614!2d80.11354967460517!3d13.06254791287878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261c3ec745e27%3A0x390e2c30972109df!2sArpan%20India%20Packers%20%26%20Movers!5e0!3m2!1sen!2sin!4v1775721689577!5m2!1sen!2sin"
         className="w-full h-[250px] md:h-[400px] rounded-xl border border-white/10"
         loading="lazy"
         style={{ filter: "invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%)" }}

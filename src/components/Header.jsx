@@ -57,10 +57,10 @@ export const Header = () => {
                 }`}
             />
             <div className="flex flex-col leading-none">
-              <span className="text-xl md:text-3xl font-black text-navy font-poppins tracking-tighter uppercase">
+              <span className="text-xl md:text-[31.5px] font-black text-navy font-poppins tracking-tighter uppercase">
                 Arpan India
               </span>
-              <span className="text-[8px] md:text-[10px] font-bold text-primary uppercase tracking-[0.25em] -mt-0.5">
+              <span className="text-[8px] md:text-[12.5px] font-bold text-primary uppercase tracking-[0.25em] -mt-0.5">
                 Packers and Movers
               </span>
             </div>
