@@ -66,7 +66,7 @@ export const TrustSection = () => {
                 margin: "0 0 0.75rem",
               }}
             >
-              Ready to Move? Get Your Free Quote Today!
+              Get a Free Moving Quote Today
             </h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
               {["No obligation", "Same-day response", "Best price guarantee"].map((t) => (

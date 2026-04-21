@@ -72,7 +72,7 @@ export const Services = () => {
             Our Services
           </div>
           <h2 className="section-title">
-            Complete Relocation Solutions
+           Reliable & Affordable Movers in Chennai
           </h2>
           <div className="divider" style={{ margin: "0.75rem auto 1rem" }} />
           <p className="section-subtitle" style={{ margin: "0 auto" }}>

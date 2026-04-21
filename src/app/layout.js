@@ -7,18 +7,18 @@ import { LeadForm } from "@/components/LeadForm";
 
 export const metadata = {
   title: "Arpan India Packers & Movers - Chennai",
-  description: "Reliable, affordable home & office relocation service in Chennai. Get a free quote today.",
+  description: "Arpan India Best Packers & Movers Chennai trusted home, office & vehicle relocation. Safe packing, timely delivery. Get your FREE quote today!",
   alternates: {
-    canonical: "https://www.arpanpackerschennai.com/",
+    canonical: "https://arpanpackerschennai.com/",
   },
   openGraph: {
     title: "Arpan India Packers & Movers - Chennai",
-    description: "Reliable, affordable home & office relocation service in Chennai. Get a free quote today.",
-    url: "https://www.arpanpackerschennai.com/",
+    description: "Arpan India Best Packers & Movers Chennai trusted home, office & vehicle relocation. Safe packing, timely delivery. Get your FREE quote today!",
+    url: "https://arpanpackerschennai.com/",
     siteName: "Arpan India Packers & Movers",
     images: [
       {
-        url: "https://www.arpanpackerschennai.com/your-og-image.jpg",
+        url: "https://arpanpackerschennai.com/mainLogo.png",
         width: 1200,
         height: 630,
         alt: "Arpan India Packers & Movers - Chennai",
@@ -32,7 +32,11 @@ export const metadata = {
     shortcut: "/favicon-main.png",
     apple: "/favicon-main.png",
   },
+  keywords: "packers and movers Chennai, packers movers in Chennai, best packers and movers Chennai, home shifting Chennai, house relocation Chennai, movers and packers Chennai, Arpan India Packers, affordable packers movers Chennai, reliable packers movers Chennai",
 };
+
+
+
 
 export const viewport = {
   width: "device-width",
@@ -64,6 +68,32 @@ export default function RootLayout({ children }) {
             gtag('js', new Date());
 
             gtag('config', 'G-JNVSG7V14G');
+          `}
+        </Script>
+        <Script id="structured-data" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": ["LocalBusiness", "MovingCompany"],
+              "name": "Arpan India Packers & Movers",
+              "url": "https://arpanpackerschennai.com",
+              "telephone": "+91-8199002004",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Ground Floor, Sakthi Garden Phase 2, No 27B, Senneer Kuppam, Poonamallee",
+                "addressLocality": "Chennai",
+                "addressRegion": "Tamil Nadu",
+                "postalCode": "600056",
+                "addressCountry": "IN"
+              },
+              "areaServed": "Chennai",
+              "priceRange": "$$",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "23"
+              }
+            }
           `}
         </Script>
       </head>

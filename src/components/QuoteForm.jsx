@@ -123,7 +123,7 @@ export const QuoteForm = () => {
             <div className="section-badge" style={{ background: "rgba(255, 90, 0, 0.1)", color: "#ff5a00", border: "1px solid rgba(255, 90, 0, 0.2)", justifyContent: "center" }}>
               📝 Free Quote
             </div>
-            <h2 className="section-title" style={{ color: "#111827" }}>Get Your Free Moving Quote</h2>
+            <h2 className="section-title" style={{ color: "#111827" }}>Tell Us About Your Move — We'll Do the Rest</h2>
             <div className="divider" style={{ background: "#ff5a00", margin: "0.75rem auto 1rem" }} />
             <p className="section-subtitle" style={{ color: "#4B5563", margin: "0 auto" }}>
               Fill in the details below and we'll provide you with a free, no-obligation quote within 2 hours.

@@ -46,9 +46,9 @@ export const Hero = () => {
 
             {/* Heading */}
             <h1 className="hero-title" style={{ marginBottom: "1.1rem" }}>
-              Safe &amp; Reliable<br />
-              <span className="gradient-text">Moving Services</span><br />
-              in Chennai
+              Best Packers &amp; Movers<br />
+              <span className="gradient-text">in Chennai</span><br />
+             
             </h1>
 
             {/* Sub-text */}

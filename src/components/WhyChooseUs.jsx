@@ -102,10 +102,10 @@ export const WhyChooseUs = () => {
           <div className="reveal" style={{ textAlign: "center", marginBottom: "3.5rem" }}>
             <div className="section-badge">
               <Medal size={14} weight="fill" />
-              Why Choose Us
+              Chennai's Most Trusted Movers
             </div>
             <h2 className="section-title" style={{ color: "#FFFFFF" }}>
-              Chennai's Most Trusted Movers
+              Why Choose Arpan India
             </h2>
             <div className="divider" style={{ margin: "0.75rem auto 1rem" }} />
             <p className="section-subtitle" style={{ margin: "0 auto", color: "#D1D5DB" }}>
